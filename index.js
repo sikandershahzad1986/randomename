@@ -5,7 +5,7 @@ app.get("/",(req,res)=>{
 res.render("index.ejs");
 })
 
-app.post("/submit",(req,res)=>{
+app.post("/go",(req,res)=>{
 const b = randomSuperhero();
 res.render("index.ejs",{sh:b});
 })
